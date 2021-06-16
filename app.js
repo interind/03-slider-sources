@@ -18,6 +18,13 @@ buttonUp.addEventListener('mousedown', () => {
 buttonDown.addEventListener('mousedown', () => {
   changeSlide('down');
 })
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'ArrowUp') {
+    changeSlide('up');
+  } else if (evt.key === 'ArrowDown') {
+    changeSlide('down');
+  }
+})
 
 
 function changeSlide(direction) {
